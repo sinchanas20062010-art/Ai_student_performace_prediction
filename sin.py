@@ -109,7 +109,7 @@ if not st.session_state.logged_in:
     if st.button("Login", use_container_width=True,key="student_login_btn"):
         if login_type == "Teacher / Admin":
             # Default Teacher / Admin credentials
-            if username == "admin" and password == "admin123":
+            if username == "Teacher" and password == "Teacher123":
                 st.session_state.logged_in = True
                 st.session_state.role = "admin"
                 st.rerun()
